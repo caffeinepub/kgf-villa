@@ -1,0 +1,149 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "KGF Villa – Single Page Wedding Venue Website",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Apply warm, elegant wedding theme (ivory, gold accents, serif typography) consistently across all sections",
+      "acceptanceCriteria": [
+        "Page uses a cohesive wedding-themed palette (ivory, gold, warm neutrals — no blue/purple)",
+        "Typography uses an elegant serif font for headings and a clean sans-serif for body text",
+        "Layout is fully responsive on mobile and desktop"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define CSS custom properties for the wedding theme: warm ivory backgrounds, gold accents, and warm neutral colors. Import an elegant serif font (e.g., Playfair Display) and a clean sans-serif (e.g., Inter) from Google Fonts. Apply base typography rules setting serif for headings and sans-serif for body text."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend the Tailwind theme with custom colors matching the wedding palette (ivory, gold, warm neutrals). Configure font families to use the serif font for headings and sans-serif for body text. Ensure responsive breakpoints are configured."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Build Hero section with 'KGF Villa' name, tagline, background image, and WhatsApp CTA button",
+      "acceptanceCriteria": [
+        "Hero section renders 'KGF Villa' as the main heading",
+        "A decorative background image or overlay is visible",
+        "CTA button is visible and prominent in the hero area"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "create",
+          "description": "Create a Hero component that displays 'KGF Villa' as the main heading, a tagline (e.g., 'Your Dream Wedding Destination'), and a prominent Call-to-Action button linking to WhatsApp (https://wa.me/917355936696?text=Hello%2C%20I%27m%20interested%20in%20booking%20KGF%20Villa). Use the generated background image at frontend/public/assets/generated/hero-bg.dim_1920x1080.png as a full-width background. Apply the wedding theme colors and typography."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the Hero component at the top of the single-page layout. Ensure it is the first section visible when the page loads."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Add About / Venue Highlights section with 3–4 feature cards describing KGF Villa",
+      "acceptanceCriteria": [
+        "Section contains at least 3 feature highlight cards",
+        "Each card has an icon and a short description",
+        "Section heading clearly references the venue"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/VenueHighlights.tsx",
+          "operation": "create",
+          "description": "Create a VenueHighlights component that renders a section heading (e.g., 'Why Choose KGF Villa') and 3–4 feature cards. Each card includes an icon (e.g., from lucide-react or similar) and a short description highlighting venue features like elegant halls, lush gardens, catering, and event management. Use the generated floral divider image at frontend/public/assets/generated/floral-divider.dim_800x80.png as a decorative element between sections. Apply the wedding theme styling."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the VenueHighlights component below the Hero section."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Add Contact section displaying phone number and WhatsApp button with pre-filled message",
+      "acceptanceCriteria": [
+        "Phone number '+91 73559 36696' is visibly displayed",
+        "WhatsApp button opens the correct wa.me URL in a new tab",
+        "Button is clearly labeled (e.g., 'Chat on WhatsApp') with the WhatsApp brand color (green)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Contact.tsx",
+          "operation": "create",
+          "description": "Create a Contact component that displays the phone number '+91 73559 36696' and a WhatsApp button. The button must open https://wa.me/917355936696?text=Hello%2C%20I%27m%20interested%20in%20booking%20KGF%20Villa in a new tab. Label the button 'Chat on WhatsApp' and style it with WhatsApp brand green. Apply the wedding theme styling to the section."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the Contact component below the VenueHighlights section."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Embed Google Maps iframe and display full address in Contact section",
+      "acceptanceCriteria": [
+        "A Google Maps iframe is rendered using the embed URL for the specified address",
+        "The full address text is displayed below or beside the map",
+        "Map iframe is responsive and visible on both mobile and desktop"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Contact.tsx",
+          "operation": "modify",
+          "description": "Add a Google Maps iframe to the Contact component using an embed URL for 'Medical Chauraha, inside KP Ground, George Town, Prayagraj, Uttar Pradesh 211002'. Display the full address text below or beside the map. Ensure the iframe is responsive (e.g., using aspect-ratio or responsive width/height). Apply the wedding theme styling."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Add sticky navigation bar with logo and anchor links; collapse into hamburger menu on mobile",
+      "acceptanceCriteria": [
+        "Navigation bar is visible and sticky on scroll",
+        "Anchor links smoothly scroll to the respective sections",
+        "Mobile navigation collapses into a menu toggle"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Navigation.tsx",
+          "operation": "create",
+          "description": "Create a Navigation component that renders a sticky/fixed navigation bar at the top. Display the KGF Villa logo (using the generated logo image at frontend/public/assets/generated/kgf-villa-logo.dim_400x120.png) and anchor links to each section (e.g., Home, About, Contact). Implement smooth scrolling to sections using anchor IDs. On mobile, collapse the navigation into a hamburger menu. Apply the wedding theme styling with a semi-transparent background."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the Navigation component at the top of the page. Assign unique IDs to each section (Hero, VenueHighlights, Contact) so anchor links can scroll to them."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Add footer displaying business details, WhatsApp link, and copyright notice",
+      "acceptanceCriteria": [
+        "Footer displays business name, address, and phone number",
+        "WhatsApp link in footer opens the correct wa.me URL",
+        "Copyright line is present"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "create",
+          "description": "Create a Footer component that displays the business name 'KGF Villa', full address 'Medical Chauraha, inside KP Ground, George Town, Prayagraj, Uttar Pradesh 211002', phone number '+91 73559 36696', and a WhatsApp link (https://wa.me/917355936696?text=Hello%2C%20I%27m%20interested%20in%20booking%20KGF%20Villa). Include a copyright notice (e.g., '© 2024 KGF Villa. All rights reserved.'). Apply the wedding theme styling with a dark background and light text."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the Footer component at the bottom of the page."
+        }
+      ]
+    }
+  ]
+}

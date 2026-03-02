@@ -1,0 +1,137 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-single-page-wedding-villa-website-for-kgf-villa-with-a-warm-elegant-visual-theme-soft-ivory-gold-accents-serif-typography-that-conveys-luxury-and-romance-apply-this-style-consistently-across-all-sections",
+      "featureTitle": "Create a single-page wedding villa website for KGF Villa with a warm, elegant visual theme (soft ivory, gold accents, serif typography) that conveys luxury and romance. Apply this style consistently across all sections.",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-hero-section-at-the-top-of-the-page-displaying-the-business-name-kgf-villa-with-a-full-width-background-image-a-short-tagline-e-g-your-dream-wedding-destination-and-a-prominent-call-to-action-button-that-links-to-whatsapp",
+      "featureTitle": "Build a Hero section at the top of the page displaying the business name 'KGF Villa' with a full-width background image, a short tagline (e.g., 'Your Dream Wedding Destination'), and a prominent Call-to-Action button that links to WhatsApp.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Hero.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-an-about-venue-highlights-section-describing-kgf-villa-as-a-premium-wedding-venue-include-3-4-feature-cards-e-g-elegant-halls-lush-gardens-catering-event-management-with-icons-and-short-descriptions",
+      "featureTitle": "Add an About / Venue Highlights section describing KGF Villa as a premium wedding venue. Include 3–4 feature cards (e.g., elegant halls, lush gardens, catering, event management) with icons and short descriptions.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/VenueHighlights.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-contact-section-that-displays-the-phone-number-91-73559-36696-and-a-whatsapp-button-the-button-must-open-whatsapp-with-a-pre-filled-greeting-message-using-the-url-https-wa-me-917355936696-text-hello-2c-20i-27m-20interested-20in-20booking-20kgf-20villa",
+      "featureTitle": "Add a Contact section that displays the phone number '+91 73559 36696' and a WhatsApp button. The button must open WhatsApp with a pre-filled greeting message using the URL: https://wa.me/917355936696?text=Hello%2C%20I%27m%20interested%20in%20booking%20KGF%20Villa.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Contact.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-embed-a-google-maps-iframe-in-the-contact-section-showing-the-address-medical-chauraha-inside-kp-ground-george-town-prayagraj-uttar-pradesh-211002-use-a-google-maps-embed-url-centered-on-this-location-also-display-the-full-address-as-readable-text-below-the-map",
+      "featureTitle": "Embed a Google Maps iframe in the Contact section showing the address: 'Medical Chauraha, inside KP Ground, George Town, Prayagraj, Uttar Pradesh 211002'. Use a Google Maps embed URL centered on this location. Also display the full address as readable text below the map.",
+      "files": [
+        "frontend/src/components/Contact.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-sticky-or-fixed-navigation-bar-at-the-top-with-the-logo-name-kgf-villa-and-anchor-links-to-each-section-e-g-home-about-contact-on-mobile-collapse-into-a-hamburger-menu",
+      "featureTitle": "Add a sticky or fixed navigation bar at the top with the logo/name 'KGF Villa' and anchor links to each section (e.g., Home, About, Contact). On mobile, collapse into a hamburger menu.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Navigation.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-footer-displaying-the-business-name-kgf-villa-address-phone-number-and-a-whatsapp-contact-link-include-a-copyright-notice",
+      "featureTitle": "Add a footer displaying the business name 'KGF Villa', address, phone number, and a WhatsApp contact link. Include a copyright notice.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Footer.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

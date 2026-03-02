@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Single page wedding villa website for KGF Villa. Features WhatsApp contact link and Google Maps address display. Business details: KGF Villa, +91 73559 36696, Medical Chauraha, inside KP Ground, George Town, Prayagraj, Uttar Pradesh 211002.",
+  "architectural_notes": [
+    "Single page static website (HTML/CSS/JS)",
+    "Business: KGF Villa | Phone: +91 73559 36696 | Address: Medical Chauraha, inside KP Ground, George Town, Prayagraj, UP 211002"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Elegant wedding venue hero background — wide cinematic shot of a decorated outdoor wedding mandap with warm golden-hour lighting, flower garlands, and fairy lights (hero-bg.dim_1920x1080.png)\n- Decorative floral divider ornament in gold on transparent background (floral-divider.dim_800x80.png)\n- KGF Villa logo — elegant text-based logo with gold lettering on dark background, floral accent (kgf-villa-logo.dim_400x120.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-wedding-villa-website-for-kgf-villa-with-a-warm-elegant-visual-theme-soft-ivory-gold-accents-serif-typography-that-conveys-luxury-and-romance-apply-this-style-consistently-across-all-sections",
+      "title": "Create a single-page wedding villa website for KGF Villa with a warm, elegant visual theme (soft ivory, gold accents, serif typography) that conveys luxury and romance. Apply this style consistently across all sections.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-hero-section-at-the-top-of-the-page-displaying-the-business-name-kgf-villa-with-a-full-width-background-image-a-short-tagline-e-g-your-dream-wedding-destination-and-a-prominent-call-to-action-button-that-links-to-whatsapp",
+      "title": "Build a Hero section at the top of the page displaying the business name 'KGF Villa' with a full-width background image, a short tagline (e.g., 'Your Dream Wedding Destination'), and a prominent Call-to-Action button that links to WhatsApp.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-about-venue-highlights-section-describing-kgf-villa-as-a-premium-wedding-venue-include-3-4-feature-cards-e-g-elegant-halls-lush-gardens-catering-event-management-with-icons-and-short-descriptions",
+      "title": "Add an About / Venue Highlights section describing KGF Villa as a premium wedding venue. Include 3–4 feature cards (e.g., elegant halls, lush gardens, catering, event management) with icons and short descriptions.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-contact-section-that-displays-the-phone-number-91-73559-36696-and-a-whatsapp-button-the-button-must-open-whatsapp-with-a-pre-filled-greeting-message-using-the-url-https-wa-me-917355936696-text-hello-2c-20i-27m-20interested-20in-20booking-20kgf-20villa",
+      "title": "Add a Contact section that displays the phone number '+91 73559 36696' and a WhatsApp button. The button must open WhatsApp with a pre-filled greeting message using the URL: https://wa.me/917355936696?text=Hello%2C%20I%27m%20interested%20in%20booking%20KGF%20Villa.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-embed-a-google-maps-iframe-in-the-contact-section-showing-the-address-medical-chauraha-inside-kp-ground-george-town-prayagraj-uttar-pradesh-211002-use-a-google-maps-embed-url-centered-on-this-location-also-display-the-full-address-as-readable-text-below-the-map",
+      "title": "Embed a Google Maps iframe in the Contact section showing the address: 'Medical Chauraha, inside KP Ground, George Town, Prayagraj, Uttar Pradesh 211002'. Use a Google Maps embed URL centered on this location. Also display the full address as readable text below the map.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-sticky-or-fixed-navigation-bar-at-the-top-with-the-logo-name-kgf-villa-and-anchor-links-to-each-section-e-g-home-about-contact-on-mobile-collapse-into-a-hamburger-menu",
+      "title": "Add a sticky or fixed navigation bar at the top with the logo/name 'KGF Villa' and anchor links to each section (e.g., Home, About, Contact). On mobile, collapse into a hamburger menu.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-footer-displaying-the-business-name-kgf-villa-address-phone-number-and-a-whatsapp-contact-link-include-a-copyright-notice",
+      "title": "Add a footer displaying the business name 'KGF Villa', address, phone number, and a WhatsApp contact link. Include a copyright notice.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Single page wedding villa website with clean design for KGF Villa",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "WhatsApp contact link using +91 73559 36696",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Google Maps embed/link displaying address: Medical Chauraha, inside KP Ground, George Town, Prayagraj, UP 211002",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "KGF Villa",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,10 @@
+{
+  "frontend/src/index.css": "Global styles with OKLCH wedding theme (ivory, gold, warm neutrals), imports Playfair Display serif and Lato sans-serif fonts from Google Fonts, and defines custom utility classes for gold, ivory, charcoal, and WhatsApp green tokens.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with wedding palette colors (gold, ivory, charcoal, whatsapp), Playfair Display serif and Lato sans font families, custom gold box shadows, and a fade-in-up animation keyframe.",
+  "frontend/src/App.tsx": "Root application component that composes the single-page layout with Navigation, Hero, VenueHighlights, Contact, and Footer sections, each wrapped in a semantic section with anchor IDs.",
+  "frontend/src/components/Navigation.tsx": "Sticky navigation bar with KGF Villa logo, desktop anchor links with hover underline animations, a WhatsApp Book Now button, and a mobile hamburger menu that collapses/expands with smooth transitions.",
+  "frontend/src/components/Hero.tsx": "Full-screen hero section with a background image, dark gradient overlay, animated KGF Villa heading, italic tagline, decorative gold ornaments, and dual CTA buttons for WhatsApp and venue exploration.",
+  "frontend/src/components/VenueHighlights.tsx": "Venue highlights section displaying 6 feature cards (halls, gardens, catering, event management, entertainment, photo spots) with lucide icons, hover effects, floral dividers, and a gold gradient CTA banner.",
+  "frontend/src/components/Contact.tsx": "Contact section with phone, address, and hours info cards, a prominent WhatsApp CTA button, and a responsive Google Maps iframe embed showing the KGF Villa location with address text below.",
+  "frontend/src/components/Footer.tsx": "Dark-themed footer with three columns (brand, contact details, WhatsApp booking), gold top border gradient, copyright notice with dynamic year, and caffeine.ai attribution with UTM tracking."
+}

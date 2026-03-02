@@ -1,0 +1,152 @@
+{
+  "kind": "build_request",
+  "title": "KGF Villa – Single Page Wedding Venue Website",
+  "projectName": "KGF Villa",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a single-page wedding villa website for KGF Villa with a warm, elegant visual theme (soft ivory, gold accents, serif typography) that conveys luxury and romance. Apply this style consistently across all sections.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create a clean single page website based on wedding villa"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Page uses a cohesive wedding-themed palette (ivory, gold, warm neutrals — no blue/purple)",
+        "Typography uses an elegant serif font for headings and a clean sans-serif for body text",
+        "Layout is fully responsive on mobile and desktop"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Build a Hero section at the top of the page displaying the business name 'KGF Villa' with a full-width background image, a short tagline (e.g., 'Your Dream Wedding Destination'), and a prominent Call-to-Action button that links to WhatsApp.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Business name -kgf villa"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section renders 'KGF Villa' as the main heading",
+        "A decorative background image or overlay is visible",
+        "CTA button is visible and prominent in the hero area"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Add an About / Venue Highlights section describing KGF Villa as a premium wedding venue. Include 3–4 feature cards (e.g., elegant halls, lush gardens, catering, event management) with icons and short descriptions.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create a clean single page website based on wedding villa"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Section contains at least 3 feature highlight cards",
+        "Each card has an icon and a short description",
+        "Section heading clearly references the venue"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Add a Contact section that displays the phone number '+91 73559 36696' and a WhatsApp button. The button must open WhatsApp with a pre-filled greeting message using the URL: https://wa.me/917355936696?text=Hello%2C%20I%27m%20interested%20in%20booking%20KGF%20Villa.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "contact which link to whatapp",
+          "Mobile number +91 73559 36696"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Phone number '+91 73559 36696' is visibly displayed",
+        "WhatsApp button opens the correct wa.me URL in a new tab",
+        "Button is clearly labeled (e.g., 'Chat on WhatsApp') with the WhatsApp brand color (green)"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Embed a Google Maps iframe in the Contact section showing the address: 'Medical Chauraha, inside KP Ground, George Town, Prayagraj, Uttar Pradesh 211002'. Use a Google Maps embed URL centered on this location. Also display the full address as readable text below the map.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "displays adrees on google map",
+          "Medical Chauraha, inside KP Ground, George Town, Prayagraj, Uttar Pradesh 211002"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A Google Maps iframe is rendered using the embed URL for the specified address",
+        "The full address text is displayed below or beside the map",
+        "Map iframe is responsive and visible on both mobile and desktop"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Add a sticky or fixed navigation bar at the top with the logo/name 'KGF Villa' and anchor links to each section (e.g., Home, About, Contact). On mobile, collapse into a hamburger menu.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create a clean single page website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navigation bar is visible and sticky on scroll",
+        "Anchor links smoothly scroll to the respective sections",
+        "Mobile navigation collapses into a menu toggle"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Add a footer displaying the business name 'KGF Villa', address, phone number, and a WhatsApp contact link. Include a copyright notice.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer displays business name, address, and phone number",
+        "WhatsApp link in footer opens the correct wa.me URL",
+        "Copyright line is present"
+      ]
+    }
+  ],
+  "constraints": [
+    "No backend logic is required; this is a purely static frontend application",
+    "Use only the business details provided: KGF Villa, +91 73559 36696, Medical Chauraha, inside KP Ground, George Town, Prayagraj, Uttar Pradesh 211002",
+    "WhatsApp link must use the exact number +91 73559 36696 formatted as 917355936696 in the wa.me URL"
+  ],
+  "nonGoals": [
+    "No booking or reservation form backend",
+    "No user authentication or login",
+    "No CMS or admin panel",
+    "No multi-page routing"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Elegant wedding venue hero background — wide cinematic shot of a decorated outdoor wedding mandap with warm golden-hour lighting, flower garlands, and fairy lights (hero-bg.dim_1920x1080.png)",
+      "Decorative floral divider ornament in gold on transparent background (floral-divider.dim_800x80.png)",
+      "KGF Villa logo — elegant text-based logo with gold lettering on dark background, floral accent (kgf-villa-logo.dim_400x120.png)"
+    ],
+    "edits": []
+  }
+}

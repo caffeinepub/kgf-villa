@@ -1,0 +1,47 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-03-02T05:05:13.948Z",
+  "summary": "All seven requirements are substantially implemented. The diff shows a complete single-page React application with Navigation, Hero, VenueHighlights, Contact, and Footer components, all using the specified wedding theme, correct WhatsApp URLs, Google Maps embed, and business details. One minor concern: the footer's WhatsApp link is declared in Footer.tsx but the file is truncated, making it difficult to fully confirm the exact URL rendering; however, the constant WHATSAPP_URL is set correctly. All other requirements are clearly met.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "Internet Identity authentication infrastructure (useInternetIdentity hook, useActor hook, InternetIdentityProvider, QueryClient) is included in the project",
+      "reason": "The build request explicitly states no user authentication or login is required and this is a purely static frontend application. The inclusion of @dfinity/auth-client, InternetIdentityProvider, and actor management hooks was not requested.",
+      "evidence": [
+        "frontend/src/hooks/useInternetIdentity.ts",
+        "frontend/src/hooks/useActor.ts",
+        "frontend/src/main.tsx",
+        "backend/main.mo"
+      ]
+    },
+    {
+      "description": "Caffeine.ai attribution with UTM tracking added in the footer",
+      "reason": "The frontend-file-summaries.txt mentions caffeine.ai attribution with UTM tracking in the footer, which was not part of any requirement.",
+      "evidence": [
+        "frontend/src/components/Footer.tsx",
+        "frontend-file-summaries.txt"
+      ]
+    }
+  ],
+  "confidence": 0.88,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/Contact.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Hero.tsx",
+    "frontend/src/components/Navigation.tsx",
+    "frontend/src/components/VenueHighlights.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

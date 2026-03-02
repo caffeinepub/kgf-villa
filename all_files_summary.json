@@ -1,0 +1,19 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as the backend entry point with no implemented functionality.",
+  "feature_evidence.json": "Feature evidence report mapping implemented features (visual theme, hero, venue highlights, contact, maps) to their corresponding source files, components, and test IDs.",
+  "frontend-file-summaries.txt": "JSON document containing one-line descriptions of each frontend source file, summarizing their purpose and key contents.",
+  "frontend/index.css": "Base Tailwind CSS file defining OKLCH-based CSS custom properties for light and dark color themes including backgrounds, borders, and chart colors.",
+  "frontend/index.html": "HTML entry point for the KGF Villa app, mounting the React app into a root div and loading the main TypeScript module.",
+  "frontend/src/App.tsx": "Root React component that assembles the single-page layout by composing Navigation, Hero, VenueHighlights, Contact, and Footer into anchored sections.",
+  "frontend/src/components/Contact.tsx": "Contact section component displaying phone, address, and hours cards alongside a WhatsApp CTA button and an embedded Google Maps iframe for the KGF Villa location.",
+  "frontend/src/components/Footer.tsx": "Dark-themed footer with brand, contact, and WhatsApp booking columns, a gold gradient top border, dynamic copyright year, and a caffeine.ai attribution link.",
+  "frontend/src/components/Hero.tsx": "Full-screen hero section featuring a background image with gradient overlay, animated KGF Villa heading, italic tagline, gold decorative ornaments, and WhatsApp and explore CTA buttons.",
+  "frontend/src/components/Navigation.tsx": "Fixed top navigation bar with smooth-scroll links, a logo, a mobile hamburger menu, and a WhatsApp booking CTA button that becomes opaque on scroll.",
+  "frontend/src/components/VenueHighlights.tsx": "Section component displaying a 3-column grid of six venue feature cards (halls, gardens, catering, etc.) with icons, titles, and descriptions under a 'Why Choose KGF Villa?' heading.",
+  "frontend/src/hooks/useActor.ts": "Custom hook that creates and caches an ICP backend actor (authenticated or anonymous) using React Query, and invalidates dependent queries whenever the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides an InternetIdentityProvider context and useInternetIdentity hook for managing DFINITY AuthClient login, logout, and identity state with status tracking.",
+  "frontend/src/index.css": "Global stylesheet importing Google Fonts and Tailwind directives, defining a wedding-themed oklch color palette (gold, ivory, charcoal) as CSS custom properties for light and dark modes.",
+  "frontend/src/main.tsx": "Application entry point that mounts the React app wrapped in QueryClientProvider and InternetIdentityProvider.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the theme with custom wedding-palette colors (gold, ivory, whatsapp), Playfair Display/Lato fonts, gold box shadows, and fade-in-up keyframe animation.",
+  "project_state.json": "Tracks project state and requirements for a single-page static wedding villa website for KGF Villa, including business details, feature list, architectural notes, and image requirements."
+}
